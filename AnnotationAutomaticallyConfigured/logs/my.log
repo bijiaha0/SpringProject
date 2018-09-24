@@ -1,0 +1,5 @@
+2018-09-24 14:53:11,278 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cb5cdba: startup date [Mon Sep 24 14:53:11 CST 2018]; root of context hierarchy
+2018-09-24 14:53:11,313 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-09-24 14:53:11,512 INFO [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor] - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2018-09-24 14:53:11,566 INFO [cn.mldn.dao.impl.DeptDAOImpl] - Dept [deptno=10, dname=开发部, loc=北京]
+2018-09-24 14:53:11,566 INFO [cn.mldn.test.TestMessageService] - true

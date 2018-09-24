@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AOPAnnotationConfiguration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AOPConfiguration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/AnnotationAutomaticallyConfigured" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BeanBaseConfiguration" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/BuildSpringDevelopmentEnvironment" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JDBCOperationTemplate" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ResourcesRead" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/RestfulSpringMVC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringDependencyInjection" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringMVC" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringTaskSchedulingPool" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:task="http://www.springframework.org/schema/task"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/task
+		http://www.springframework.org/schema/task/spring-task-4.1.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.1.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.1.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.1.xsd
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-4.1.xsd">
+	<context:annotation-config/>
+	<context:component-scan base-package="cn.mldn"/>
+	<bean id="messageServiceImpl" class="cn.mldn.service.impl.MessageServiceImpl"/>
+	<bean id="serviceProxy" class="cn.mldn.service.proxy.ServiceProxy"/>
+	 <aop:config>
+	 	<aop:pointcut expression="execution(* cn.mldn.service..*.*(..))" id="defaultPointCut" />
+		<aop:aspect ref="serviceProxy">
+			<aop:around method="arroundInvoke" pointcut-ref="defaultPointCut"/>
+		</aop:aspect>
+	 </aop:config>
+	<!-- 
+	<aop:config>
+		<aop:pointcut expression="execution(* cn.mldn.service..*.*(..)) and args(id)"
+			id="defaultPointCut" />
+		<aop:aspect ref="serviceProxy">
+			<aop:before method="beforeInvoke" pointcut-ref="defaultPointCut"
+				arg-names="id" />
+			<aop:after method="afterInvoke" pointcut="execution(* cn.mldn.service..*.*(..))" />
+			<aop:after-returning method="returnInvoke"
+				pointcut="execution(* cn.mldn.service..*.*(..))" returning="v"
+				arg-names="v" />
+			<aop:after-throwing method="throwInvoke"
+				pointcut="execution(* cn.mldn.service..*.*(..))" throwing="e"
+				arg-names="e" />
+		</aop:aspect>
+	</aop:config> 
+	 -->
+</beans>

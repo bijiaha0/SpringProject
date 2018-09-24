@@ -1,0 +1,8 @@
+2018-09-24 14:46:29,233 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3cb5cdba: startup date [Mon Sep 24 14:46:29 CST 2018]; root of context hierarchy
+2018-09-24 14:46:29,265 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-09-24 14:46:29,416 INFO [cn.mldn.test.TestMessageService] - Dept [deptno=10, dname=开发部, loc=北京, groups=[Emp [empno=7369, ename=SMITH, sal=800.0, dept=null], Emp [empno=7566, ename=ALLEN, sal=2450.0, dept=null]]]
+2018-09-24 14:48:01,803 INFO [org.springframework.context.support.ClassPathXmlApplicationContext] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@75bd9247: startup date [Mon Sep 24 14:48:01 CST 2018]; root of context hierarchy
+2018-09-24 14:48:01,838 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-09-24 14:48:01,998 INFO [cn.mldn.test.TestMessageService] - www.mldn.cn
+2018-09-24 14:48:01,999 INFO [cn.mldn.test.TestMessageService] - Emp [empno=7369, ename=SMITH, sal=800.0, dept=null]
+2018-09-24 14:48:02,000 INFO [cn.mldn.test.TestMessageService] - Dept [deptno=10, dname=开发部, loc=北京, groups=[Emp [empno=7369, ename=SMITH, sal=800.0, dept=null], Emp [empno=7566, ename=ALLEN, sal=2450.0, dept=null]]]
